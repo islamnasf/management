@@ -7,11 +7,11 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('dashboard/index');
+    return route('login');
 });
 
 Route::get('/dashboard', function () {
-    return route('login');
+    return view('dashboard/index');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

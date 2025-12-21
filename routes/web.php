@@ -9,6 +9,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return redirect()->route('login');
 });
+Route::get('/', function () {
+    return view('nabinaMohame');
+});
 
 
 Route::get('/dashboard', function () {

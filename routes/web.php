@@ -10,7 +10,7 @@ Route::get('/', function () {
     return redirect()->route('login');
 });
 Route::get('/nabinaMohamed', function () {
-    return view('dashboard/nabinaMohamed');
+    return view('dashboard/nabinaMohame');
 });
 
 

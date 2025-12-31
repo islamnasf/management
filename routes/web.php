@@ -12,6 +12,9 @@ Route::get('/', function () {
 Route::get('/nabinaMohamed', function () {
     return view('dashboard/nabinaMohame');
 });
+Route::get('/azkar', function () {
+    return view('azkar');
+});
 
 
 Route::get('/dashboard', function () {
